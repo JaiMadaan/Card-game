@@ -1,0 +1,101 @@
+body {
+      font-family: Arial, sans-serif;
+        background-color: #2c3e50;
+          color: #ecf0f1;
+            margin: 0;
+              padding: 0;
+                display: flex;
+                  flex-direction: column;
+                    align-items: center;
+                      justify-content: center;
+                        height: 100vh;
+                        }
+
+                        #game-container {
+                          text-align: center;
+                            max-width: 600px;
+                            }
+
+                            #game-table {
+                              display: grid;
+                                grid-template-rows: 1fr 1fr 1fr;
+                                  gap: 10px;
+                                    margin-top: 20px;
+                                      border: 2px solid #ecf0f1;
+                                        border-radius: 10px;
+                                          padding: 10px;
+                                            background: #34495e;
+                                            }
+
+                                            .hand {
+                                              display: flex;
+                                                justify-content: center;
+                                                  gap: 10px;
+                                                  }
+
+                                                  .card {
+                                                    width: 50px;
+                                                      height: 70px;
+                                                        border: 1px solid #ecf0f1;
+                                                          border-radius: 5px;
+                                                            background-color: white;
+                                                              display: flex;
+                                                                align-items: center;
+                                                                  justify-content: center;
+                                                                    font-size: 14px;
+                                                                      font-weight: bold;
+                                                                        color: black;
+                                                                        }
+
+                                                                        .card.played {
+                                                                          background-color: #e74c3c;
+                                                                            color: white;
+                                                                            }
+
+                                                                            #level-transition {
+                                                                              position: fixed;
+                                                                                top: 0;
+                                                                                  left: 0;
+                                                                                    width: 100%;
+                                                                                      height: 100%;
+                                                                                        background-color: rgba(0, 0, 0, 0.8);
+                                                                                          color: white;
+                                                                                            display: flex;
+                                                                                              align-items: center;
+                                                                                                justify-content: center;
+                                                                                                  font-size: 3rem;
+                                                                                                    z-index: 10;
+                                                                                                      opacity: 0;
+                                                                                                        pointer-events: none;
+                                                                                                          transition: opacity 1s ease;
+                                                                                                          }
+
+                                                                                                          #level-transition.visible {
+                                                                                                            opacity: 1;
+                                                                                                              pointer-events: auto;
+                                                                                                              }
+
+                                                                                                              .hidden {
+                                                                                                                display: none;
+                                                                                                                }
+
+                                                                                                                button {
+                                                                                                                  background-color: #3498db;
+                                                                                                                    color: white;
+                                                                                                                      border: none;
+                                                                                                                        border-radius: 5px;
+                                                                                                                          padding: 10px 20px;
+                                                                                                                            cursor: pointer;
+                                                                                                                              font-size: 1rem;
+                                                                                                                              }
+
+                                                                                                                              button:hover {
+                                                                                                                                background-color: #2980b9;
+                                                                                                                                     }
+                                                                    
+
+
+
+
+
+                                                                                                                                
